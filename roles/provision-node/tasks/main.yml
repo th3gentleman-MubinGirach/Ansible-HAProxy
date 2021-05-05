@@ -1,0 +1,13 @@
+---
+# tasks file for provision-node
+- name: Provison Node instances
+  ec2:
+       key_name: "{{ keypair }}"
+       instance_type: t2.micro
+       image: "{{ image }}"
+       wait: yes
+       count: "{{count_node}}"
+       instance_tags:
+         Name : node
+       region: "{{ region }}"
+ 

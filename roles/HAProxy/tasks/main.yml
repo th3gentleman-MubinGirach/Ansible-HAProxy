@@ -1,0 +1,18 @@
+---
+# tasks file for HAProxy-installation
+- name: Installing HAProxy 
+  package:
+    name: haproxy
+    state: present
+
+- name: Starting HAProxy 
+  service:
+    name: haproxy
+    state: started
+
+- name: Copying configuration file
+  template:
+    src: haproxy.cfg
+    dest: /etc/haproxy/haproxy.cfg
+
+   

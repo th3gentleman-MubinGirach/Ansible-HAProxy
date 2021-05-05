@@ -1,0 +1,12 @@
+---
+# tasks file for provision-lb
+- name: Provison lb instance
+  ec2:
+       key_name: "{{ keypair }}"
+       instance_type: t2.micro
+       image: "{{ image }}"
+       wait: yes
+       count: 1
+       instance_tags:
+         Name : lb
+       region: "{{ region }}"

@@ -1,0 +1,9 @@
+- hosts: ["tag_Name_node"]   
+  roles:  
+    - name: "Installing httpd"
+      role: httpd 
+
+- hosts: ["tag_Name_lb"]
+  roles: 
+    - name: "Installing HAProxy on Load Balancer"
+      role: HAProxy
