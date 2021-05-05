@@ -15,5 +15,6 @@ Configure HAProxy on AWS instances dynamically using Ansible </br>
   Give proper path of your key in the ansible config file </br>
   Give permission to the keyfile using chmod 0400 filename </br>
   Change the name in the yaml file of var directory of node & lb provision roles as well </br>
+  Wait for approx 5-7 mins after running the setup playbook as the AWS takes time to start your instances
   </ol>
   
