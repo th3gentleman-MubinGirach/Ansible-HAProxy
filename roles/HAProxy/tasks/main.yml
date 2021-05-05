@@ -14,5 +14,10 @@
   template:
     src: haproxy.cfg
     dest: /etc/haproxy/haproxy.cfg
+    
+- name: Starting HAProxy 
+  service:
+    name: haproxy
+    state: restarted 
 
    
