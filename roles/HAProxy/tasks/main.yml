@@ -15,7 +15,7 @@
     src: haproxy.cfg
     dest: /etc/haproxy/haproxy.cfg
     
-- name: Starting HAProxy 
+- name: Restarting HAProxy 
   service:
     name: haproxy
     state: restarted 
