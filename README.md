@@ -18,3 +18,4 @@ Configure HAProxy on AWS instances dynamically using Ansible </br>
   Wait for approx 5-7 mins after running the setup playbook as AWS takes time to start your instances
   </ol>
   
+<b>For Reference Video <a href="https://www.linkedin.com/posts/mubingirach_cloud-devops-ansible-activity-6795738124669489152-XeOx">Click here</a>
